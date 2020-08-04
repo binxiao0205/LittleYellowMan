@@ -1,0 +1,297 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #9A0049;
+}
+.minion{
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	width: 380px;
+	height: 700px;
+	/* background-color: pink; */
+	margin-bottom: 200px;
+}
+.body{
+	position: absolute;
+	width: 380px;
+	height: 700px;
+	background-color: #fff500;
+	border-radius: 180px;
+}
+.hairs{
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+}
+.hair{
+	width: 2px;
+	height: 70px;
+	background-color: #000;
+	position: absolute;
+}
+.hair1{
+	left: 45%;
+	top: -40px;
+	transform: rotate(-20deg);
+}
+.hair2{
+	left: 50%;
+	top: -40px;
+	/* transform: rotate(-20deg); */
+}
+.hair3{
+	left: 55%;
+	top: -40px;
+	transform: rotate(20deg);
+}
+/* 眼镜部分 */
+.glasses-type{
+	width: 100%;
+	height: 52px;
+	background:#1f1a17;
+	position: absolute;
+	top: 200px;
+	z-index: 1;
+}
+.glasses{
+	width: 150px;
+	height: 150px;
+	background: #dedede;
+	border-radius: 50%;
+	border: 2px solid #1f1a17;
+	position: absolute;
+	top: 140px;
+	z-index: 2;
+}
+.left-glasses{
+	left: 8%;
+}
+.right-glasses{
+	right:8% ;
+}
+.eye{
+	width: 120px;
+	height: 120px;
+	background: #fff;
+	border-radius: 50%;
+	border: 2px solid #1f1a17;
+	margin: 15px auto;
+	position: relative;
+}
+.eye .ball{
+	width: 40px;
+	height: 40px;
+	background: #8f5444;
+	border-radius: 50%;
+	border: 2px solid #1f1a17;
+	position: absolute;
+	top: 40%;
+	animation: eye 0.5s infinite ease;
+	/* transition: all 0.5s linear; */
+}
+.eye .ball strong{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #1f1a17;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+/* 嘴巴部分 */
+.mouth{
+	width:40%;
+	height: 80px;
+	background-color: #fff;
+	position: absolute;
+	left: 30%;
+	bottom: 42%;
+	z-index: 1;
+	border: 2px solid #1f1a17;
+	border-radius: 120px 120px 40px 40px;
+	overflow: hidden;
+	animation: up-down 0.5s infinite ease;
+}
+.tooths .tooth{
+	width: 0;
+	height: 100%;
+	border-right: 2px solid #1F1A17;
+	position: absolute;
+}
+.tooths .tooth1{
+	left: 25%;
+}
+.tooths .tooth2{
+	left: 50%;
+}
+.tooths .tooth3{
+	left: 75%;
+}
+.line{
+	width: 100%;
+	border-top: 3px solid #1F1A17;
+	position: absolute;
+	top: 48%;
+}
+/* 胳膊部分 */
+.arm{
+	width: 50px;
+	height: 400px;
+	background-color: #fff500;
+	border-radius: 50%;
+	position: absolute;
+	top: 160px;
+	z-index: 0;
+}
+.left-arm{
+	left: -20px;
+	transform: rotate(30deg);
+}
+.right-arm{
+	right: -20px;
+	transform: rotate(-30deg);
+}
+.hand{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #1F1A17;
+	position: absolute;
+	bottom: 0;
+	left: -5px;
+}
+/* 衣服部分 */
+.cloth{
+	background-color: #667ab3;
+	width:80%;
+	height: 250px;
+	border-radius: 20px;
+	position: absolute;
+	left: 10%;
+	bottom: 20px;
+	z-index: 1;
+}
+/* 口袋部分 */
+.pocket{
+	width: 100px;
+	height: 100px;
+	border: 2px solid #1F1A17;
+	border-radius: 5px 5px 30px 30px;
+	position: absolute;
+	left: 50%;
+	bottom: 80px;
+	z-index: 2;
+	margin-left: -50px;
+}
+.pocket > div{
+	width: 50px;
+	height: 50px;
+	background-color: #1F1A17;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	left: 25px;
+}
+.pocket > div > div{
+	width: 20px;
+	height: 20px;
+	border: 5px solid #667AB3;
+	position: absolute;
+	top:10px;
+	left: 10px;
+}
+/* 裤子部分 */
+.trousers{
+	width:100%;
+	height: 160px;
+	background-color: #667AB3;
+	position: absolute;
+	bottom:0;
+	z-index: 1;
+	border-radius: 10px 10px 130px 130px;
+}
+/* 肩带部分 */
+.straps{
+	width: 40px;
+	height: 150px;
+	background-color: #667AB3;
+	position: absolute;
+	bottom: 230px;
+	z-index: 1;
+}
+.left-straps{
+	left: 15px;
+	transform: rotate(-45deg);
+}
+.right-straps{
+	right: 15px;
+	transform: rotate(45deg);
+}
+
+.fastener{	/* 扣子 */
+	width: 20px;
+	height: 20px;
+	background-color: #1F1A17;
+	border-radius: 50%;
+	position: absolute;
+    left: 10px;
+	bottom: 10px;
+}
+/* 腿 */
+.leg{
+	width: 70px;
+	height: 120px;
+	background-color: #667AB3;
+	position: absolute;
+	bottom: -80px;
+}
+.left-leg{
+	left: 20%;
+}
+.right-leg{
+	right: 20%;
+}
+.leg .footer{
+	width: 100px;
+	height: 50px;
+	background-color: #1F1A17;
+	position: absolute;
+	bottom: 0;
+	
+}
+.leg .left-footer{
+	right: -2px;
+	border-radius:100px 0 0 20px;
+}
+.leg .right-footer{
+	left: -2px;
+	border-radius:0 100px 20px 0 ;
+}
+
+/* 动画部分 */
+@keyframes eye {
+    0% {  
+        transform:rotate(0,0);
+    }
+    50% {  
+        transform:translate(70px,0px)
+    }
+    100% {  
+        transform:translate(0px,0px)
+    }
+}
+@keyframes up-down {
+    0% {  
+        transform:rotate(0,0);
+    }
+    50% {  
+        transform:translate(0,2px)
+    }
+    100% {  
+        transform:translate(0,0)
+    }
+}
